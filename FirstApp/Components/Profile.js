@@ -8,7 +8,9 @@ const Profile = (props) => {
   return (
     <>
       <View style={mystyle.profileBox}>
-        <Image source={require("../Images/man.png")} style={mystyle.imgStyle}/>
+      <View style={{display:"flex",flexDirection:"row",justifyContent:"center"}}>
+        <Image source={{uri:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2BetQecEPZPH1770yc9Wtm2_yr90fGe1S0JkPrDXLnA&s"}} style={mystyle.imgStyle}/>
+        </View>
         <Text>Profile Section</Text>
         <Text>{name_profile}</Text>
         <Text>{subscription_profile}</Text>
@@ -18,15 +20,15 @@ const Profile = (props) => {
 };
 const mystyle = {
   imgStyle: {
-    width: 80,
+    width: 100,
     height: 80,
   },
   profileBox:{
-    width:180,
+    width:220,
     height:200,
     padding:10,
     borderWidth:"2px",
-    borderRadius:"1rem",
+    borderRadius:15,
     borderColor:"red"
   },
   TextCenter:{
