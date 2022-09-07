@@ -8,12 +8,13 @@ import {
   FlatList,
 } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
-import cryptocurrencies from "./assets/data/cryptocurrencies.json";
 import CoinItem from "./src/components/CoinItem/index";
+import CoinDetailedScreen from "./src/screens/CoinDetailedScreen/";
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeScreen/>
+      {/* <HomeScreen/> */}
+      <CoinDetailedScreen/>
       <StatusBar style="light" />
     </View>
   );
